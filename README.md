@@ -22,6 +22,7 @@
     text-align: center;
   }
 
+  /* White circular background for the logo */
   .logo {
     width: 120px;
     height: 120px;
@@ -102,27 +103,15 @@
 </head>
 <body>
   <div class="container">
-    <!-- SVG logo -->
+    <!-- Overlapping colorful circle logo (no image file needed) -->
     <div class="logo">
       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#FF00CC" />
-            <stop offset="20%" stop-color="#FF6600" />
-            <stop offset="40%" stop-color="#FFFF00" />
-            <stop offset="60%" stop-color="#00FF66" />
-            <stop offset="80%" stop-color="#00CCFF" />
-            <stop offset="100%" stop-color="#CC00FF" />
-          </linearGradient>
-        </defs>
-        <g fill="none" stroke="url(#grad)" stroke-width="12">
-          <circle cx="100" cy="40" r="30" />
-          <circle cx="153" cy="70" r="30" />
-          <circle cx="153" cy="130" r="30" />
-          <circle cx="100" cy="160" r="30" />
-          <circle cx="47" cy="130" r="30" />
-          <circle cx="47" cy="70" r="30" />
-        </g>
+        <circle cx="100" cy="50" r="35" fill="rgba(255,0,0,0.6)" />
+        <circle cx="145" cy="75" r="35" fill="rgba(255,165,0,0.6)" />
+        <circle cx="145" cy="125" r="35" fill="rgba(255,255,0,0.6)" />
+        <circle cx="100" cy="150" r="35" fill="rgba(0,255,0,0.6)" />
+        <circle cx="55" cy="125" r="35" fill="rgba(0,0,255,0.6)" />
+        <circle cx="55" cy="75" r="35" fill="rgba(138,43,226,0.6)" />
       </svg>
     </div>
 
