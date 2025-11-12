@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -22,14 +23,11 @@
     text-align: center;
   }
 
-  /* Logo background and layout */
+  /* Logo SVG container */
   .logo {
     width: 140px;
     height: 140px;
-    border-radius: 50%;
-    background-color: #fff;
-    padding: 10px;
-    margin: 1rem auto 1.5rem;
+    margin: 0 auto 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,18 +101,18 @@
 </head>
 <body>
   <div class="container">
-    <!-- SVG logo with thin overlapping rainbow rings -->
+    <!-- Logo SVG -->
     <div class="logo">
       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <!-- Six colored outer rings -->
-        <circle cx="100" cy="40" r="35" stroke="#FF4B4B" stroke-width="8" fill="none" opacity="0.7" />
-        <circle cx="150" cy="70" r="35" stroke="#FFA500" stroke-width="8" fill="none" opacity="0.7" />
-        <circle cx="150" cy="130" r="35" stroke="#FFFF00" stroke-width="8" fill="none" opacity="0.7" />
-        <circle cx="100" cy="160" r="35" stroke="#00FF00" stroke-width="8" fill="none" opacity="0.7" />
-        <circle cx="50" cy="130" r="35" stroke="#0099FF" stroke-width="8" fill="none" opacity="0.7" />
-        <circle cx="50" cy="70" r="35" stroke="#9933FF" stroke-width="8" fill="none" opacity="0.7" />
+        <!-- Six thin translucent rainbow rings -->
+        <circle cx="100" cy="40"  r="35" stroke="#FF4B4B" stroke-width="8" fill="none" opacity="0.75"/>
+        <circle cx="150" cy="70"  r="35" stroke="#FFA500" stroke-width="8" fill="none" opacity="0.75"/>
+        <circle cx="150" cy="130" r="35" stroke="#FFFF00" stroke-width="8" fill="none" opacity="0.75"/>
+        <circle cx="100" cy="160" r="35" stroke="#00FF00" stroke-width="8" fill="none" opacity="0.75"/>
+        <circle cx="50"  cy="130" r="35" stroke="#0099FF" stroke-width="8" fill="none" opacity="0.75"/>
+        <circle cx="50"  cy="70"  r="35" stroke="#9933FF" stroke-width="8" fill="none" opacity="0.75"/>
         <!-- Center ring -->
-        <circle cx="100" cy="100" r="20" stroke="#FF69B4" stroke-width="6" fill="none" opacity="0.9" />
+        <circle cx="100" cy="100" r="20" stroke="#FF69B4" stroke-width="6" fill="none" opacity="0.9"/>
       </svg>
     </div>
 
@@ -147,3 +145,4 @@
   <div class="footer">( Made with GitHub Pages )</div>
 </body>
 </html>
+
