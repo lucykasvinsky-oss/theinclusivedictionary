@@ -22,7 +22,6 @@
     text-align: center;
   }
 
-  /* Logo styling */
   .logo {
     width: 120px;
     height: 120px;
@@ -30,8 +29,9 @@
     background-color: #fff;
     padding: 10px;
     margin: 1rem auto 1.5rem;
-    display: block;
-    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   h1 {
@@ -102,8 +102,29 @@
 </head>
 <body>
   <div class="container">
-    <!-- Replace with your own logo image path -->
-    <img class="logo" src="images/logo.jpeg" alt="The Inclusive Dictionary Logo" />
+    <!-- SVG logo -->
+    <div class="logo">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FF00CC" />
+            <stop offset="20%" stop-color="#FF6600" />
+            <stop offset="40%" stop-color="#FFFF00" />
+            <stop offset="60%" stop-color="#00FF66" />
+            <stop offset="80%" stop-color="#00CCFF" />
+            <stop offset="100%" stop-color="#CC00FF" />
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#grad)" stroke-width="12">
+          <circle cx="100" cy="40" r="30" />
+          <circle cx="153" cy="70" r="30" />
+          <circle cx="153" cy="130" r="30" />
+          <circle cx="100" cy="160" r="30" />
+          <circle cx="47" cy="130" r="30" />
+          <circle cx="47" cy="70" r="30" />
+        </g>
+      </svg>
+    </div>
 
     <h1>THE INCLUSIVE DICTIONARY</h1>
     <h2>Welcome to The Inclusive Dictionary!</h2>
