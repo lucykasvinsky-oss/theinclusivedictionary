@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -23,11 +22,14 @@
     text-align: center;
   }
 
-  /* Logo SVG container */
+  /* Logo background and layout */
   .logo {
     width: 140px;
     height: 140px;
-    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+    margin: 1rem auto 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,18 +103,18 @@
 </head>
 <body>
   <div class="container">
-    <!-- Logo SVG -->
+    <!-- SVG logo with thin overlapping rainbow rings -->
     <div class="logo">
       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <!-- Six thin translucent rainbow rings -->
-        <circle cx="100" cy="40"  r="35" stroke="#FF4B4B" stroke-width="8" fill="none" opacity="0.75"/>
-        <circle cx="150" cy="70"  r="35" stroke="#FFA500" stroke-width="8" fill="none" opacity="0.75"/>
-        <circle cx="150" cy="130" r="35" stroke="#FFFF00" stroke-width="8" fill="none" opacity="0.75"/>
-        <circle cx="100" cy="160" r="35" stroke="#00FF00" stroke-width="8" fill="none" opacity="0.75"/>
-        <circle cx="50"  cy="130" r="35" stroke="#0099FF" stroke-width="8" fill="none" opacity="0.75"/>
-        <circle cx="50"  cy="70"  r="35" stroke="#9933FF" stroke-width="8" fill="none" opacity="0.75"/>
-        <!-- Center ring -->
-        <circle cx="100" cy="100" r="20" stroke="#FF69B4" stroke-width="6" fill="none" opacity="0.9"/>
+        <!-- Six colored outer rings -->
+        <circle cx="100" cy="40" r="35" stroke="#FF4B4B" stroke-width="8" fill="none" opacity="0.7" />
+        <circle cx="150" cy="70" r="35" stroke="#FFA500" stroke-width="8" fill="none" opacity="0.7" />
+        <circle cx="150" cy="130" r="35" stroke="#FFFF00" stroke-width="8" fill="none" opacity="0.7" />
+        <circle cx="100" cy="160" r="35" stroke="#00FF00" stroke-width="8" fill="none" opacity="0.7" />
+        <circle cx="50" cy="130" r="35" stroke="#0099FF" stroke-width="8" fill="none" opacity="0.7" />
+        <circle cx="50" cy="70" r="35" stroke="#9933FF" stroke-width="8" fill="none" opacity="0.7" />
+        <!-- Center ring overlapping halfway with other rings -->
+        <circle cx="100" cy="100" r="30" stroke="#FF69B4" stroke-width="6" fill="none" opacity="0.9" />
       </svg>
     </div>
 
@@ -129,7 +131,7 @@
 
     <p>Click “Explore by Topic” to explore all topics and resources.</p>
     <p>Click "Updates" to view updates that have been made to this dictionary.</p>
-    <p>Note: Due to Carrd's limited assets for free users, this is not as easily navigatable as we had hoped.</p>
+    <p>Note: Due to Carrd's limited assets for free users, this is not as easily navigable as we had hoped.</p>
 
     <div class="buttons">
       <a href="updates.html" class="btn">Updates</a>
@@ -145,4 +147,3 @@
   <div class="footer">( Made with GitHub Pages )</div>
 </body>
 </html>
-
