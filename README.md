@@ -22,10 +22,10 @@
     text-align: center;
   }
 
-  /* White circular background for the logo */
+  /* Logo background and layout */
   .logo {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background-color: #fff;
     padding: 10px;
@@ -103,15 +103,18 @@
 </head>
 <body>
   <div class="container">
-    <!-- Overlapping colorful circle logo (no image file needed) -->
+    <!-- SVG logo with thin overlapping rainbow rings -->
     <div class="logo">
       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="100" cy="50" r="35" fill="rgba(255,0,0,0.6)" />
-        <circle cx="145" cy="75" r="35" fill="rgba(255,165,0,0.6)" />
-        <circle cx="145" cy="125" r="35" fill="rgba(255,255,0,0.6)" />
-        <circle cx="100" cy="150" r="35" fill="rgba(0,255,0,0.6)" />
-        <circle cx="55" cy="125" r="35" fill="rgba(0,0,255,0.6)" />
-        <circle cx="55" cy="75" r="35" fill="rgba(138,43,226,0.6)" />
+        <!-- Six colored outer rings -->
+        <circle cx="100" cy="40" r="35" stroke="#FF4B4B" stroke-width="8" fill="none" opacity="0.7" />
+        <circle cx="150" cy="70" r="35" stroke="#FFA500" stroke-width="8" fill="none" opacity="0.7" />
+        <circle cx="150" cy="130" r="35" stroke="#FFFF00" stroke-width="8" fill="none" opacity="0.7" />
+        <circle cx="100" cy="160" r="35" stroke="#00FF00" stroke-width="8" fill="none" opacity="0.7" />
+        <circle cx="50" cy="130" r="35" stroke="#0099FF" stroke-width="8" fill="none" opacity="0.7" />
+        <circle cx="50" cy="70" r="35" stroke="#9933FF" stroke-width="8" fill="none" opacity="0.7" />
+        <!-- Center ring -->
+        <circle cx="100" cy="100" r="20" stroke="#FF69B4" stroke-width="6" fill="none" opacity="0.9" />
       </svg>
     </div>
 
